@@ -3,6 +3,7 @@
     justify-content: space-around;
     background-color: #8F5E1E;
     align-items: center;
+    padding: 10px 25px;
 }
 
 .BuildControl button {
