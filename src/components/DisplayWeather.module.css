@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Display {
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#inputDiv{
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  border: 1px solid red;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#inputDiv input{
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+  
+}
+
+#search{
+  background: black;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search:active {
+  transform: scale(0.96);
+}
+
+#search i{
+  color: white;
+}
+
+#output{
+  /* background-image: url(images/back.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  display: none;
+  color: white;
+  padding-top: 5px;
+  /* height: 60vh; */
+}
+
+#location{
+  display: block;
+  line-height: 50px;
+  margin: 15px auto;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+#res{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#res img{
+  width: 35%;
+}
+
+#data{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#upper{
+    display: flex;
+}
+
+#upper h1{
+    font-size: 100px;
+}
+
+#upper p{
+  font-size: 40px;
+}
+
+#lower p {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.info {
+  display: block;
+  text-align: center;
+}
+
+.info p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info i {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 300px) {
+  #res img{
+  width: 40%;
+}
+
+  #location {
+    font-size: 18px;
+  }
+
+  #upper h1, #upper p {
+    font-size: 18px;
+  }
+
+  #lower p {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  .info i {
+    font-size: 10px;
+  }
+}
