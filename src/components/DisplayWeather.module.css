@@ -2,92 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .Display {
     padding: 20px;
-    height: 100%;
+    height: 100vh;
     position: relative;
-    background-image: url('../images/back.jpg');
+    background-image: url("../images/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
-.input{
-  position: relative;
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  border: 1px solid red;
-  margin: 20px auto;
-  border-radius: 10px;
-  overflow: hidden;
+.input {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.input input{
-  height: 40px;
-  padding: 10px;
-  width: 100%;
-  
+.input input {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
 }
 
-.btn{
-  background: black;
-  width: 100px;
-  height: 100%;
-  position: absolute;
-  top: 0; 
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn {
+    background: black;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:active {
-  transform: scale(0.96);
+    transform: scale(0.96);
 }
 
-.btn i{
-  color: white;
+.btn i {
+    color: white;
 }
 
-.output{
-  /* background-image: url(images/back.jpg); */
-  /* background-repeat: no-repeat;
+.output {
+    /* background-image: url(images/back.jpg); */
+    /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
-  /* display: none; */
-  color: white;
-  padding-top: 5px;
-  /* height: 60vh; */
+    /* display: none; */
+    color: white;
+    padding-top: 5px;
+    /* height: 60vh; */
 }
 
-.location{
-  display: block;
-  line-height: 20px;
-  margin: 5px auto;
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
+.location {
+    display: block;
+    line-height: 20px;
+    margin: 5px auto;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
 
-.res{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5px;
+.res {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
 }
 
-.res img{
-  width: 35%;
-  margin: 0;
+.res img {
+    width: 35%;
+    margin: 0;
 }
 
-.data{
+.data {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -95,61 +94,62 @@
     justify-content: space-between;
 }
 
-.upper{
+.upper {
     display: flex;
 }
 
-.upper h1{
+.upper h1 {
     font-size: 35px;
 }
 
-.upper p{
-  font-size: 40px;
+.upper p {
+    font-size: 40px;
 }
 
 .lower p {
-  font-size: 20px;
-  text-transform: capitalize;
-  font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .info {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .info p {
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .info i {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 300px) {
-  .res img{
-  width: 40%;
+    .res img {
+        width: 40%;
+    }
+
+    .location {
+        font-size: 18px;
+    }
+
+    .upper h1,
+    #upper p {
+        font-size: 18px;
+    }
+
+    .lower p {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .info i {
+        font-size: 10px;
+    }
 }
-
-  .location {
-    font-size: 18px;
-  }
-
-  .upper h1, #upper p {
-    font-size: 18px;
-  }
-
-  .lower p {
-    font-size: 18px;
-  }
-
-  .info p {
-    font-size: 16px;
-  }
-
-  .info i {
-    font-size: 10px;
-  }
-} 
