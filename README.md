@@ -1,3 +1,11 @@
+# Weather-report
+Made use of openweather.com API to fetch my real-time weather data.
+I attached the file that contains the IDs to be inputted into the space provided in the repository.
+
+This is the link to the Live Demo of the Project https://weather-ty.netlify.app
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
